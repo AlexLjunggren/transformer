@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 import com.ljunggren.transformer.Transformer;
-import com.ljunggren.transformer.annotation.DateFormat;
+import com.ljunggren.transformer.annotation.TransformDateFormat;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -15,7 +15,7 @@ public class DateFormatTransformationTest {
     @AllArgsConstructor
     @Getter
     private class DateFormatPojo {
-        @DateFormat(from = "MM-dd-yyyy", to = "yyyy/MM/dd")
+        @TransformDateFormat(from = "MM-dd-yyyy", to = "yyyy/MM/dd")
         private String date;
     }
 

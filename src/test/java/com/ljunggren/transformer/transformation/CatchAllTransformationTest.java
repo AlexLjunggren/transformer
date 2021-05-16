@@ -5,7 +5,7 @@ import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 import com.ljunggren.transformer.Transformer;
-import com.ljunggren.transformer.annotation.DateFormat;
+import com.ljunggren.transformer.annotation.TransformDateFormat;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -15,7 +15,7 @@ public class CatchAllTransformationTest {
     @AllArgsConstructor
     @Getter
     private class Pojo {
-        @DateFormat(from = "", to = "")
+        @TransformDateFormat(from = "", to = "")
         private int number;
     }
 
