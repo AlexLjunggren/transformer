@@ -33,3 +33,17 @@ Data types supported
 - String
 
 Format used by java.text.SimpleDateFormat
+
+
+## Custom ##
+
+Transforms against a custom class
+
+```java
+@CustomTransformer(MyManipulation.clss)
+```
+
+Required
+- value - Class that implements Manipulation
+
+**Note:** Custom transformation class must implement the Manipulation interface
