@@ -11,6 +11,7 @@ import org.apache.commons.lang3.reflect.FieldUtils;
 import com.ljunggren.transformer.transformation.CatchAllTransformation;
 import com.ljunggren.transformer.transformation.CustomTransmformation;
 import com.ljunggren.transformer.transformation.DateFormatTransformation;
+import com.ljunggren.transformer.transformation.ToBase64Transformation;
 
 public class Transformer {
 
@@ -61,8 +62,9 @@ public class Transformer {
     private void transformationChain(Annotation annotation, Item item) {
         new DateFormatTransformation()
                 .nextChain(new CustomTransmformation()
+                .nextChain(new ToBase64Transformation()
                 .nextChain(new CatchAllTransformation()
-                        )).transform(annotation, item);
+                        ))).transform(annotation, item);
     }
     
 }

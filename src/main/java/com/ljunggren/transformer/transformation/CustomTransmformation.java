@@ -19,6 +19,7 @@ public class CustomTransmformation extends TransformationChain {
                 // do something with exception
             }
         }
+        nextChain.transform(annotation, item);
     }
     
     @SuppressWarnings("unchecked")

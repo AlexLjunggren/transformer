@@ -21,6 +21,19 @@ Transform
 transformer.transform();
 ```
 
+## Custom ##
+
+Transforms against a custom class
+
+```java
+@CustomTransformer(MyManipulation.clss)
+```
+
+Required
+- value - Class that implements Manipulation
+
+**Note:** Custom transformation class must implement the Manipulation interface
+
 ## Date Format ###
 
 Change the format of a date string
@@ -34,16 +47,14 @@ Data types supported
 
 Format used by java.text.SimpleDateFormat
 
+## Base 64 ##
 
-## Custom ##
-
-Transforms against a custom class
+Transforms to Base 64
 
 ```java
-@CustomTransformer(MyManipulation.clss)
+@ToBase64("value")
 ```
 
-Required
-- value - Class that implements Manipulation
+Data types supported
+- String
 
-**Note:** Custom transformation class must implement the Manipulation interface

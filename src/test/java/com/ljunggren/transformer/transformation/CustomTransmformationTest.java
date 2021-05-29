@@ -6,7 +6,7 @@ import org.junit.Test;
 
 import com.ljunggren.transformer.Transformer;
 import com.ljunggren.transformer.annotation.CustomTransformer;
-import com.ljunggren.transformer.manipulation.ReverseManipulationTest;
+import com.ljunggren.transformer.manipulation.ToBase64Manipulation;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -16,7 +16,7 @@ public class CustomTransmformationTest {
     @AllArgsConstructor
     @Getter
     private class CustomPojo {
-        @CustomTransformer(ReverseManipulationTest.class)
+        @CustomTransformer(ToBase64Manipulation.class)
         private String password;
     }
 
@@ -24,7 +24,7 @@ public class CustomTransmformationTest {
     public void transformTest() {
         CustomPojo pojo = new CustomPojo("secret");
         new Transformer(pojo).transform();
-        assertEquals("terces", pojo.getPassword());
+        assertEquals("c2VjcmV0", pojo.getPassword());
     }
     
     @AllArgsConstructor
