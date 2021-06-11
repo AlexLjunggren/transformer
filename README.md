@@ -52,7 +52,7 @@ Format used by java.text.SimpleDateFormat
 Transforms to Base 64
 
 ```java
-@ToBase64("value")
+@ToBase64()
 ```
 
 Data types supported
