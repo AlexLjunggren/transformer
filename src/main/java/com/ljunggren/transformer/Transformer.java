@@ -13,14 +13,13 @@ import com.ljunggren.transformer.transformation.CustomTransmformation;
 import com.ljunggren.transformer.transformation.DateFormatTransformation;
 import com.ljunggren.transformer.transformation.ToBase64Transformation;
 
+import lombok.AllArgsConstructor;
+
+@AllArgsConstructor
 public class Transformer {
 
     private Object object;
 
-    public Transformer(Object object) {
-        this.object = object;
-    }
-    
     public Transformer transform() {
         List<Item> items = findItems(object);
         transformItems(items);
