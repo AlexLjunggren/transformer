@@ -26,7 +26,7 @@ transformer.transform();
 Transforms against a custom class
 
 ```java
-@CustomTransformer(MyManipulation.clss)
+@CustomTransformer(MyManipulation.class)
 ```
 
 Required
