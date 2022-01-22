@@ -1,13 +1,12 @@
-package com.ljunggren.transformer.transformation;
+package io.ljunggren.transformer.transformation;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import com.ljunggren.transformer.Transformer;
-import com.ljunggren.transformer.annotation.CustomTransformer;
-import com.ljunggren.transformer.manipulation.ToBase64Manipulation;
-
+import io.ljunggren.transformer.Transformer;
+import io.ljunggren.transformer.annotation.CustomTransformer;
+import io.ljunggren.transformer.manipulation.ToBase64Manipulation;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 

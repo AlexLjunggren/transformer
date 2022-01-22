@@ -1,6 +1,6 @@
-package com.ljunggren.transformer.manipulation;
+package io.ljunggren.transformer.manipulation;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 

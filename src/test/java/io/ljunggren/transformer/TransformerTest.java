@@ -1,11 +1,10 @@
-package com.ljunggren.transformer;
+package io.ljunggren.transformer;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import com.ljunggren.transformer.annotation.TransformDateFormat;
-
+import io.ljunggren.transformer.annotation.TransformDateFormat;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 

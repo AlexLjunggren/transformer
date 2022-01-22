@@ -1,4 +1,4 @@
-package com.ljunggren.transformer.annotation;
+package io.ljunggren.transformer.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -7,8 +7,9 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.FIELD)
-public @interface CustomTransformer {
+public @interface TransformDateFormat {
 
-    Class<?> value();
+    String from();
+    String to();
     
 }

@@ -1,4 +1,4 @@
-package com.ljunggren.transformer;
+package io.ljunggren.transformer;
 
 import java.lang.reflect.Field;
 

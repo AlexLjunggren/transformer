@@ -1,4 +1,4 @@
-package com.ljunggren.transformer;
+package io.ljunggren.transformer;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Field;
@@ -8,11 +8,10 @@ import java.util.List;
 
 import org.apache.commons.lang3.reflect.FieldUtils;
 
-import com.ljunggren.transformer.transformation.CatchAllTransformation;
-import com.ljunggren.transformer.transformation.CustomTransmformation;
-import com.ljunggren.transformer.transformation.DateFormatTransformation;
-import com.ljunggren.transformer.transformation.ToBase64Transformation;
-
+import io.ljunggren.transformer.transformation.CatchAllTransformation;
+import io.ljunggren.transformer.transformation.CustomTransmformation;
+import io.ljunggren.transformer.transformation.DateFormatTransformation;
+import io.ljunggren.transformer.transformation.ToBase64Transformation;
 import lombok.AllArgsConstructor;
 
 @AllArgsConstructor

@@ -1,8 +1,8 @@
-package com.ljunggren.transformer.transformation;
+package io.ljunggren.transformer.transformation;
 
 import java.lang.annotation.Annotation;
 
-import com.ljunggren.transformer.Item;
+import io.ljunggren.transformer.Item;
 
 public abstract class TransformationChain {
 
