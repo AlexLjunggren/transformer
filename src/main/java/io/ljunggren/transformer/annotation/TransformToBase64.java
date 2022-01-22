@@ -1,4 +1,4 @@
-package com.ljunggren.transformer.annotation;
+package io.ljunggren.transformer.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

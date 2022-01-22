@@ -1,11 +1,11 @@
-package com.ljunggren.transformer.transformation;
+package io.ljunggren.transformer.transformation;
 
 import java.lang.annotation.Annotation;
 
-import com.ljunggren.transformer.Item;
-import com.ljunggren.transformer.annotation.TransformToBase64;
-import com.ljunggren.transformer.manipulation.Manipulation;
-import com.ljunggren.transformer.manipulation.ToBase64Manipulation;
+import io.ljunggren.transformer.Item;
+import io.ljunggren.transformer.annotation.TransformToBase64;
+import io.ljunggren.transformer.manipulation.Manipulation;
+import io.ljunggren.transformer.manipulation.ToBase64Manipulation;
 
 public class ToBase64Transformation extends TransformationChain {
 

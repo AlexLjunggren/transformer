@@ -1,4 +1,4 @@
-package com.ljunggren.transformer.manipulation;
+package io.ljunggren.transformer.manipulation;
 
 import java.util.Base64;
 
