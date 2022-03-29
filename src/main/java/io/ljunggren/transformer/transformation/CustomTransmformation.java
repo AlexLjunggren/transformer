@@ -26,7 +26,7 @@ public class CustomTransmformation extends TransformationChain {
     private Manipulation<Object> instantiateManipulation(Class<?> clazz) throws Exception {
         try {
             if (Manipulation.class.isAssignableFrom(clazz)) {
-                return (Manipulation<Object>) clazz.newInstance();
+                return (Manipulation<Object>) clazz.getDeclaredConstructor().newInstance();
             }
             throw new Exception(String.format("CustomeTransformer(%s) does not implement Manipulation", clazz.getSimpleName()));
         } catch (ClassNotFoundException e) {

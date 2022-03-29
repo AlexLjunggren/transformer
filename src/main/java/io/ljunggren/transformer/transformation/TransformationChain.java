@@ -15,4 +15,8 @@ public abstract class TransformationChain {
     
     public abstract void transform(Annotation annotation, Item item);
     
+    protected boolean isString(Item item) {
+        return item.getValue() instanceof String;
+    }
+    
 }
